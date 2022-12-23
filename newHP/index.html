@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsBuddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a href="#" class="logo">Sports<span>Buddy</span></a>
+            <nav>
+                <svg class="close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="close"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/>
+                    <path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/></g></g>
+                </svg>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/signup.html#">Sign Up</a></li>
+                <li><a href="http://127.0.0.1:5500/signin.html#">Sign In</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+            </nav>
+            <svg class="menu" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3ZM3 9a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3ZM2 14a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM3 17a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3Z" fill="#fff"/>
+            </svg>
+        </header>
+
+        <section class="hero">
+            <h1>Play anytime, anywhere</h1>
+            <p class="subhead">Meet and have fun with people who share the same interests in sports as you do. </p>
+        </section>
+
+        <section class="moreInfo">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Fast and smooth</p>
+                    <p class="desc">Having trouble scheduling activities with your friends? Meet with like minded available people instead.</p>
+                </div>
+                <img src="images/smooth.jpg" alt="Fast and smooth">
+            </div>
+            <div class="feature left">
+                <div class="content">
+                    <p class="title">You are the star</p>
+                    <p class="desc">Activities revolve around your personal preferences.</p>
+                </div>
+                <img src="images/star.jpg" alt="star">
+            </div>
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Friendly or Competetive</p>
+                    <p class="desc">Either have a casual game or thrive on the competition</p>
+                </div>
+                <img src="images/comp.jpg" alt="comp">
+            </div>
+        </section>
+
+    </div>
+
+        <script>
+            const menu = document.querySelector('.menu')
+            const close = document.querySelector('.close')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click', () => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click', () => {
+                nav.classList.remove('open-nav')
+            })
+        </script>
+</body>
+</html>
